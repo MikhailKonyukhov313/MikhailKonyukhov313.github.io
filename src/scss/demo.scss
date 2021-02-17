@@ -1,0 +1,280 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: $foreground-color;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-break: auto;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+}
+
+h1 {
+  color: #a4a5a6;
+  font-size: 1.2rem;
+  line-height: 1.45;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.container {
+  // position: relative;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+
+  &-logo {
+    width: 30%;
+    height: 100vh;
+    min-height: 500px;
+    background: #2b2c2c;
+
+    &__avatar {
+      margin: auto;
+      margin-top: 35vh;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid#154ea2;
+      box-shadow: 0px 1px 9px 5px #ccc;
+    }
+  }
+
+  &-description {
+    width: 70%;
+    height: 100vh;
+    background: #2d2e2e;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15vh;
+}
+
+.name-section {
+  width: 60%;
+  margin: 40px;
+  margin-top: 40vh;
+}
+
+.name {
+  display: block;
+  line-height: 0.91;
+  margin-bottom: 10px;
+
+  &-first {
+    display: block;
+
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 60px;
+    color: #a4a5a6;
+  }
+
+  &-second {
+    display: block;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 60px;
+    color: #e0a80d;
+  }
+}
+
+.social-icon {
+  margin: 5px;
+}
+
+.social-webs {
+  display: flex;
+}
+
+.vk-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.speciality {
+  font-weight: 300;
+  font-size: 20px;
+  color: #aaa;
+}
+
+.social-webs {
+  margin-top: 45vh;
+}
+
+.hr {
+  height: 2px;
+  width: 91%;
+  margin-bottom: 1.75rem;
+  color: #404242;
+  background: #404242;
+  font-size: 0;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 91%;
+}
+
+.top-item {
+  display: block;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.bottom-item {
+  display: block;
+  font-weight: 300;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+
+  &__header {
+    width: 30%;
+    padding: 40px;
+    background: #292a2a;
+    text-align: right;
+  }
+
+  &__text {
+    width: 70%;
+    padding: 40px;
+    background: #2b2c2c;
+    color: #979899;
+    text-align: left;
+  }
+}
+
+.expertise {
+  display: flex;
+  flex-direction: row;
+
+  &__header {
+    width: 30%;
+    padding: 40px;
+    color: #a4a5a6;
+    background: #2b2c2c;
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 1.45;
+    text-transform: uppercase;
+
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 40px;
+    background: #2d2e2e;
+    text-align: left;
+  }
+}
+
+.expert-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 50%;
+
+  &__num {
+    color: #e0a80d;
+    font-size: 1.2rem;
+    line-height: 1.45;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.expert-number {
+  padding: 15px;
+}
+
+.expert-descr {
+  padding: 15px;
+  padding-top: 0;
+
+  &__header {
+    padding-bottom: 15px;
+    color: #a4a5a6;
+    font-size: 1.2rem;
+    line-height: 1.45;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__text {
+    color: #979899;
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+
+  &__header {
+    width: 30%;
+    padding: 40px;
+    background: #292a2a;
+    text-align: right;
+  }
+
+  &__text {
+    width: 70%;
+    padding: 40px;
+    background: #2b2c2c;
+    color: #979899;
+    text-align: left;
+  }
+}
+
+.footer {
+  height: 100px;
+  background: #2b2c2c;
+  border: 2px solid #e0a80d;
+
+  &-items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      align-self: center;
+      padding: 2px;
+    }
+  }
+}
+
+.footer-name {
+  font-size: 1.4rem;
+  color: #154ea2;
+  text-shadow: 0px 0px 1px #e0a80d;
+}
